@@ -8,7 +8,7 @@
 
 <html>
 
-<form action="#" method="postar" id ='form-formulario'>
+<form id ='form-formulario'>
     <h1 align="center">Seu Formulario</h1>
     
     <hr>
@@ -52,7 +52,7 @@
     <br><br>
 
     <label for="campo-nome">Nome Completo:</label>
-    <input type="text" id="campo-nome" name="nome" value="Escreva o seu nome">
+    <input type="text" id="campo-nome" nome="nome" value="Escreva o seu nome">
     <br><br>
 
     <label for="campo-aceite">Aceite os Termos de uso</label>
@@ -63,9 +63,4 @@
 
 
 <script>
-    const formulario = document.querySelector("#form-formulario");
-
-    formulario.addEventListener("submit", function(event){
-        event.preventDefault();
-        alert("Mensagem Enviada com Sucesso")
-    })
+    const formulario = document.querySelector("#form-formulario")

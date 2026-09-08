@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Olá Seja bem vindo(a) ao meu portfólio!</h1>
+    <hr>
+    
+    <p>Meu nome é Hebert Vincius e eu sou um estudante do curso juventude-dev na UFRB.</p>
+    <hr>
+    <br>
+
+    <h2>Meus conhecimentos</h2>
+    <p>Eu sei um pouco de HTML, Python, inglês (não é o melhor do mundo mas quebra um galho), e sei um pouco de musica tbm</p>
+    <br>
+
+    <h2>alguns dos meus projetos pessoais:</h2>
+    <!--Lista com meus projetos-->
+    <ul>
+        <li>um mini RPG de texto (incompleto no momento) em python</li>
+        
+    </ul>
+
+    <hr>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTry7_oxkKkoSFLv5HN7UiRIBPyuH5Yf1NtVuGpATj7pQ&s=10" alt="Foto meme" width="200" height="200">
+    <hr>
+    <br><br>
+
+    <h2>Linguagens Que Domino</h2>
+    <!--Tabela-->
+    <table border="2">
+        
+        <tr>
+            <th>Nome</th>
+            <th>Nível de habilidade (0-10)</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <hr>
+    <h2>Meu GitHub</h2>
+    <a href="https://github.com/hvs0867">GitHub</a>
+    <hr>
+    <br><br>
+
+    <h3>Preencha o formulario a baixo e me mande uma mensagem:</h3>
+    <!--Formulario-->
+    <form action="#" id="campo-formulario"  method="post">
+        
+        <label for="campo-nome">Nome</label>
+        <input type="text" name="nome" id="campo-nome" placeholder="Digite seu nome" required>
+        <br><br>
+
+        <label for="campo-email">Email</label>
+        <input type="email" name="email" id="campo-email" placeholder="Digite seu email" required>
+        <br><br>
+
+        <label for="campo-mensagem">Mensagem</label>
+        <textarea name="mensagem" id="campo-mensagem" rows="2" placeholder="Digite sua mensagem" required></textarea>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        <br><br>
+
+    </form>
+    <hr>    
+
+
+</body>
+</html>
+
+<script>
+    const formulario = document.querySelector("#campo-formulario");
+
+    formulario.addEventListener("submit",
+    function(event){event.preventDefault();
+    alert("Mensagem enviada com sucesso");
+    });
+</script>

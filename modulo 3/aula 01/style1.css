@@ -1,0 +1,16 @@
+body{color: #334155}
+
+.destaque{background: #fef08a;}
+
+#titulo {font-size: 32px;}
+
+.cartao p {color: #475569}
+
+.interesses > li {color: #7c3aed}
+
+a[herf="#"] {color: #2563eb}
+
+
+#erro {color: yellow;}
+p { color: blue;}
+.aviso {color: red}

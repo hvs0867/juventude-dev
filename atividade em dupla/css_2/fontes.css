@@ -1,0 +1,78 @@
+:root {
+    --fundo: #0d1b2a;
+    --cards: #1b263b;
+    --elementos: #253e5a;
+    --segundario: #778DA9;
+    --texto: #e0e1dd;
+
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.titulo {
+    text-align: center;
+    color: var(--texto);
+}
+
+.titulo h1 {
+    margin: 0;
+    color: var(--segundario);
+    font-size: 3rem;
+}
+
+.titulo h3 {
+    font-weight: normal;
+
+}
+
+.titulo p {
+    color: var(--segundario);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.titulo nav a {
+    
+    font-size: 0.95rem;
+}
+
+h2, h3, h4 {
+    color: #244b5a;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+.subtit {
+    color: var(--texto);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--segundario);
+}
+
+#tabela {
+    font-size: 1rem;
+    text-align: left;
+}
+
+a {
+    color: var(--elementos);
+    font-weight: bold;
+}
+
+button {
+   color: var(--elementos);
+    font-size: 1rem;
+    background-color:var(--segundario)
+}

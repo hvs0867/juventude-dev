@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Alguns testes de outras funções-->
+    <title>Portfólio do Hebert - Desenvolvedor em formação</title>
+    <meta name="description" content="Portifolio de projetos em pyhon e HTML desenvolvidos durante o curso Juventude Dev, incluindo a calculadora de IMC e formulario">
+
+    <!--Open Graph conjuntos de meta tags-->
+    <meta property="og:title" content="Portifolio do Hebert">
+    <meta property="og:description" content="Projeto em HTML feito pelo vurso Juventude Dev.">
+    <meta property="og:image" content="https://meusite.com/imagens/capa-portifolio.png">
+
+
+</head>
+<body>
+    <ul>
+        <li data-categoria="fruta" data-preco="3.50">Maça</li>
+        <li data-categoria="legume" data-preco="2.00">Cenoura</li>
+    </ul>
+
+    <!--Alguns testes de outras funções-->
+    <button aria-label="Fechar Janela">X</button>
+   
+    <p> <span aria-hidden="true">🎉</span>Cadastro realizado com sucesso</p>
+
+    <!--Alguns testes de outras funções-->
+    <p>Meu prato favorito é o <span lang="it">tiramisò</span></p>
+    <a href="#" title="Abre um link para X site">Site</a>
+
+    <br><br><br>
+    <!--Alguns testes de outras funções-->
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>23</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>17</td>
+                <td>Cruz das Almas</td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+<!--Alguns testes de outras funções-->
+    <video controls width="250">
+        <source src="demo-projeto.mp4" type="video/mp4">
+        Seu Navegador não Suporta video em HTML.
+    </video>
+
+    <audio controls>
+        <source src="/juventude-dev/modulo 2/Projetos/musica-portifolio.mp3" type="audio/mpeg">
+        Seu navegador nao suporta audio em HTML
+    </audio>
+
+    <!--Alguns testes de outras funções-->
+    <figure>
+        <img src="https://ufsb.edu.br/cfcam/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image04_grd.png" width="300" height="200" alt="Imagem de uma flor amarela">
+        <figcaption>Imagem de uma Linda flor</figcaption>
+    </figure>
+
+
+
+</body>
+</html>
+
+<script>
+    const item = document.querySelector("li")
+    console.log(item.dataset.categoria)
+
+</script>

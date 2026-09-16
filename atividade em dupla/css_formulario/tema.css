@@ -1,0 +1,74 @@
+:root {
+    --fundo: #0d1b2a;
+    --cards: #1b263b;
+    --segundario: #778DA9;
+    --texto: #e0e1dd;
+    --destaque: #f1c27d;
+    --campo: #f2f5f7;
+    --botao: #778DA9;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+h1 {
+    color: var(--destaque);
+    text-align: center;
+}
+
+form {
+    background-color: var(--cards);
+    border-radius: 15px;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+label, input, textarea, button,
+p {
+    color: var(--texto);
+}
+
+
+input,
+textarea {
+    background-color: var(--campo);
+    color: #1b263b;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+
+textarea {
+    min-height: 120px;
+}
+
+
+button {
+    background-color: var(--botao);
+    color: var(--fundo);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: var(--destaque);
+}
+
+#voltar {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px;
+}

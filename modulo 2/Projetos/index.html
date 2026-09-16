@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio do Hebert - Desenvolvedor em formação do curso Juventude Dev</title>
+
+    <meta name="description" content="Portifolio pessoal contento algumas informaçoes sobre os meus conhecimentos">
+
+    <!--Open Graph-->
+    <meta property="og:title" content="Portifolio do Hebert">
+    <meta propperty="og:description" content="Portifolio feito em HTML com informaçoes pessoais">
+    <meta property="og:image" content="#">
+    
 </head>
 <body>
     
-    <h1>Olá Seja bem vindo(a) ao meu portfólio!</h1>
+    <h1 id="titulo" align="center">Olá Seja bem vindo(a) ao meu portfólio!</h1>
     <hr>
     
     <p>Meu nome é Hebert Vincius e eu sou um estudante do curso juventude-dev na UFRB.</p>
+
+    <p>Musiquinha:</p>
+    <audio controls>
+        <source  src="/juventude-dev/modulo 2/Projetos/musica-portifolio.mp3" type="audio/mpeg">
+    </audio>
     <hr>
     <br>
 
@@ -18,41 +31,50 @@
     <p>Eu sei um pouco de HTML, Python, inglês (não é o melhor do mundo mas quebra um galho), e sei um pouco de musica tbm</p>
     <br>
 
-    <h2>alguns dos meus projetos pessoais:</h2>
+    <h2>Alguns dos meus projetos pessoais:</h2>
+
     <!--Lista com meus projetos-->
     <ul>
-        <li>um mini RPG de texto (incompleto no momento) em python</li>
+        <li>Um mini RPG de texto (incompleto no momento) em python</li>
         
     </ul>
+    <hr>
 
-    <hr>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTry7_oxkKkoSFLv5HN7UiRIBPyuH5Yf1NtVuGpATj7pQ&s=10" alt="Foto meme" width="200" height="200">
-    <hr>
+    <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTry7_oxkKkoSFLv5HN7UiRIBPyuH5Yf1NtVuGpATj7pQ&s=10" alt="Imagem de uma Flor" width="200" height="200">
+        <figcaption>Imagem de uma Flor Gira-Sol</figcaption>
+    </figure>
+
+        <hr>
     <br><br>
 
     <h2>Linguagens Que Domino</h2>
     <!--Tabela-->
     <table border="2">
-        
-        <tr>
-            <th>Nome</th>
-            <th>Nível de habilidade (0-10)</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nível de habilidade (0-10)</th>
+            </tr>
+        </thead>
 
-        <tr>
-            <td>HTML</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>5</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>4</td>
+            </tr>
+
+            <tr>
+                <td>Python</td>
+                <td>5</td>
+            </tr>
+        </tbody>
     </table>
-
     <br><br>
+
     <hr>
-    <h2>Meu GitHub</h2>
-    <a href="https://github.com/hvs0867">GitHub</a>
+    <h2>Meu <span lang="en">GitHub</span></h2>
+    <a href="https://github.com/hvs0867" title="Link Que Leva Para o Meu GitHUb">GitHub</a>
     <hr>
     <br><br>
 
@@ -61,18 +83,18 @@
     <form action="#" id="campo-formulario"  method="post">
         
         <label for="campo-nome">Nome</label>
-        <input type="text" name="nome" id="campo-nome" placeholder="Digite seu nome" required>
+        <input type="text" name="nome" id="campo-nome" placeholder="Digite seu nome" class="card" required>
         <br><br>
 
         <label for="campo-email">Email</label>
-        <input type="email" name="email" id="campo-email" placeholder="Digite seu email" required>
+        <input type="email" name="email" id="campo-email" placeholder="Digite seu email" class="card" required>
         <br><br>
 
         <label for="campo-mensagem">Mensagem</label>
-        <textarea name="mensagem" id="campo-mensagem" rows="2" placeholder="Digite sua mensagem" required></textarea>
+        <textarea name="mensagem" id="campo-mensagem" rows="2" placeholder="Digite sua mensagem" class="card" required></textarea>
         <br><br>
 
-        <input type="submit" value="Enviar">
+        <input aria-label="Botao Enviar" type="submit" value="Enviar" title="Envia o formulario">
         <br><br>
 
     </form>

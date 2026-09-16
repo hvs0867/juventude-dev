@@ -1,0 +1,174 @@
+:root {
+    --fundo: #0d1b2a;
+    --cards: #1b263b;
+    --elementos: #794a37;
+    --segundario: #778DA9;
+    --texto: #e0e1dd;
+
+}
+
+
+#areas img {
+    width: 80%;
+    max-width: 500px;
+    height: 250px;
+    margin: 10px 0 25px;
+    border-radius: 8px;
+}
+
+body {
+    background-color: var(--fundo);
+    margin: 0;
+    padding: 0 12px;
+    min-height: 100vh;
+}
+
+.titulo{
+    background-color: var(--cards);
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 25px;
+    height: auto;
+    margin: 20px auto;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--segundario) ;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 8px;
+}
+
+#inicio{
+    background-color: var(--cards);
+    width: 20% 50%;
+    margin: 20px;
+
+}
+
+#inicio p{
+    padding-left: 10px;
+    margin-top: 0px;
+}
+
+#areas{
+    background-color: var(--cards);
+    border: var(--texto);
+    margin: 20px;
+    padding: 0px;
+    text-align: center;
+   
+}
+
+#areas h1, h2,h3 {
+    padding: 2%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#programacao{
+    background-color: var(--cards);
+    margin: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+
+
+}
+
+#tabela{
+    margin: auto;
+    color: #8d9eb3;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#programacao h3{
+    color: var(--texto);
+}
+
+#pessoas{
+    background-color: var(--cards);
+    margin: 20px;
+
+}
+
+ol{
+    color: #90a1b8;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+
+#pessoas h3{
+    text-align: center;
+}
+
+#contatos {
+    background-color: var(--cards);
+    margin: 20px;
+    border-radius: 15px;
+   
+
+}
+#contatos h4, p, a{
+    margin-left: 12px;
+
+}
+
+#contatos a{
+    color: #8d9eb3;
+}
+
+
+#faq{
+    background-color: var(--cards);
+    margin-bottom: 0px;
+}
+
+section{
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.25);
+    margin: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    background-color:aqua;
+    border-radius: 1.5px;
+}
+
+a{
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: lightblue;
+}
+
+nav a {
+    margin: 4px 6px;
+}
+
+button{
+    background-color: #778DA9;
+    color: red;
+}
+
+button:hover{
+    color: lightblue;
+}
+
+#contatos a{
+    text-decoration: underline;
+}

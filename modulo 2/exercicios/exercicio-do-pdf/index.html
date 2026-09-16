@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        <li data-categoria="Filme" data-ano="2000" data-duracao="02:30">Star Wars</li>
+        <li data-categoria="Jogo" data-ano="2010" data-duracao-modo-historia="04:30">TEste</li>
+        <li data-categoria="Fruta" data-validade="2meses" data-ano="2026">Maça</li>
+    </ul>
+
+    <!--Exercicio para criar uma tabela com dados da nossa esclhas, porem com eu estou sem ideia vou fazer parecido com o outro-->
+    <table>
+        <thead>
+            <tr>
+
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Hobby</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Joao</td>
+                <td>23</td>
+                <td>Jogar</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>16</td>
+                <td>Ler Livros</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>15</td>
+                <td>Dar Grau de Moto</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+<script>
+    const item = document.querySelector("li")
+    console.log(item.dataset)
+</script>

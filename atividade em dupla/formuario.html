@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+
+    <link rel="stylesheet" href="css_formulario/reset.css">
+    <link rel="stylesheet" href="css_formulario/tema.css">
+    <link rel="stylesheet" href="css_formulario/formulario.css">
+</head>
+<body>
+    <h1>Preencha os campos abaixo e garanta a sua vaga no nosso evento!</h1>
+
+    <form action="#" method="post" id="formulario">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required placeholder="Seu Nome">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Seu email" title="Seu Email">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required title="Formato esperado: XX xxxxx-xxxx" placeholder="Seu Telefone">
+
+        <p>Áreas de interesse:</p>
+        <label for="fotografia">Fotografia</label>
+        <input type="checkbox" id="fotografia" name="areas" value="fotografia">
+
+        <label for="artes">Artes</label>
+        <input type="checkbox" id="artes" name="areas" value="artes">
+
+        <label for="tecnologia">Tecnologia</label>
+        <input type="checkbox" id="tecnologia" name="areas" value="tecnologia">
+
+        <label for="opniao">Qual atividade gostaria de participar?</label>
+        <textarea name="opniao" id="opniao" placeholder="Escreva aqui..."></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <a href="index_v2.html">
+        <button id="voltar" type="button">Voltar para a Página Inicial</button>
+    </a>
+</body>
+</html>

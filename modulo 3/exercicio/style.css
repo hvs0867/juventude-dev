@@ -9,33 +9,37 @@ body{
 }
 
 header{
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0px;
     background-color: violet;
     display: flex;
-    width: 100%;
+    width: 60%;
     justify-content: space-between;
     padding: 10px;
     height: 50px;
     text-align: center;
+    
 }
 
 .subtopo2 {
     display: inline-block;
-    position: relative;
+    position: fixed;
     background-color: rgb(255, 255, 95);
     right: -10px;
     width: 40%;
     padding: 10px;
     height: 50px;
     top: -10px;
+    z-index: 1;
 }
 
 
 main{
-
-    margin-top: 50px;
+    border: 2px dashed black;
+    margin: 10px;
+    background-color: rgb(168, 156, 156);
+    
 }
 
 .circulo{
@@ -45,6 +49,10 @@ main{
     background-color: #e74c3c;
     color: white;
     font-family: sans-serif;
+    
+    position: relative;
+    left: 60px;
+    bottom: 10px;
 
     display: flex;
     align-items: center;     
@@ -56,3 +64,38 @@ main{
 }
 
 
+.quadrado{
+    display: inline-block;
+    background-color: olivedrab;
+    color: white;
+    width: 200px;
+    padding: 5px;
+
+    position: relative;
+    left: 300px;
+    bottom: -100px;
+}
+
+.retangulo{
+    background-color: rgb(194, 94, 94);
+    width: 70%;
+    border-radius: 3px;
+    
+    left: 90px;
+    margin: 20px 0px;
+    padding: 5px;
+    
+
+    position: relative;
+
+
+}
+
+
+footer{
+    position: relative;
+    top: 500px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}

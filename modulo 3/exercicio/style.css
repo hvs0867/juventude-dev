@@ -10,92 +10,99 @@ body{
 
 header{
     position: relative;
-    top: 0px;
-    left: 0px;
     background-color: violet;
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     padding: 10px;
-    height: 50px;
+    min-height: 50px;
     text-align: center;
-    
 }
 
 .subtopo2 {
-    display: inline-block;
-    position: fixed;
+    display: block;
+    position: static;
     background-color: rgb(255, 255, 95);
-    right: -10px;
-    width: 40%;
+    width: auto;
     padding: 10px;
-    height: 50px;
-    top: -10px;
-    z-index: 1;
 }
 
 
 main{
     border: 2px dashed black;
     margin: 10px;
+    padding: 16px;
     background-color: rgb(168, 156, 156);
-    
+}
+
+.pai {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .circulo{
-    width: 150px;
-    height: 150px;
+    width: clamp(110px, 18vw, 150px);
+    height: clamp(110px, 18vw, 150px);
     border-radius: 50%;
     background-color: #e74c3c;
     color: white;
     font-family: sans-serif;
     
-    position: relative;
-    left: 60px;
-    bottom: 10px;
-
     display: flex;
     align-items: center;     
     justify-content: center; 
 
     text-align: center;
     padding: 10px; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 
 .quadrado{
-    display: inline-block;
+    display: block;
     background-color: olivedrab;
     color: white;
-    width: 200px;
+    width: min(100%, 200px);
     padding: 5px;
-
-    position: relative;
-    left: 300px;
-    bottom: -100px;
 }
 
 .retangulo{
     background-color: rgb(194, 94, 94);
-    width: 70%;
+    width: min(100%, 600px);
     border-radius: 3px;
-    
-    left: 90px;
-    margin: 20px 0px;
+    margin: 0;
     padding: 5px;
-    
-
-    position: relative;
-
-
 }
 
 
 footer{
-    position: relative;
-    top: 500px;
     text-align: center;
     background-color: black;
     color: white;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        margin: 8px;
+        padding: 12px;
+    }
+
+    .pai {
+        flex-direction: column;
+    }
+
+    .quadrado,
+    .retangulo {
+        width: 100%;
+        max-width: none;
+    }
 }

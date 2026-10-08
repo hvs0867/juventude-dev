@@ -1,0 +1,51 @@
+main{
+    padding-top: 110px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(20, 16, 17);
+    border: 2px solid rgba(170, 120, 120, 0.774);
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
+
+.card {
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card button {
+    width: 100%;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #ffb6d9;
+    color: #333;
+}

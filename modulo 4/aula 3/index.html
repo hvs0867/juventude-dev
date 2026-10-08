@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <header class="d-flex flex-column align-items-center text-center py-3">
+    <header class="d-flex justify-space-between align-items-center text-center py-3">
         <h1>Loja de Bolos</h1>
         <nav class="d-flex justify-content-center gap-4">
             <a href="#home">Home</a>
@@ -20,35 +20,49 @@
 
     <main>
         <section id="home">
-            <h2>Seja Bem vindo ao melhor site de venda de bolos do mundo. Aqui temos varias opções de bolos para satisfazer o seu maravilhoso paladar confira alguma delas abaixo </h2>
+           <h2>Bem-vindo à Loja de Bolos!</h2>
+           <p>Aqui temos várias opções de bolos para satisfazer o seu maravilhoso paladar. Confira algumas delas abaixo.</p>
+            
             <section class="container py-5" aria-label="Tipos de bolos">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
+
                     <div class="col">
                         <article class="card h-100">
                             <img src="https://www.receiteria.com.br/wp-content/uploads/bolo-de-ovos.jpeg" class="card-img-top" alt="Bolo simples caseiro">
                             <div class="card-body">
                                 <h2 class="card-title h5">Bolos Simples</h2>
                                 <p class="card-text">Temos bolos simples de vários sabores para você experimentar.</p>
+                                <h3>R$25.00</h3>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+
                             </div>
                         </article>
                     </div>
+
                     <div class="col">
-                        <article class="card h-100">
+                        <article class="card h-70">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtFFSw8vtgAQXDp4_51Fs3UDXuUlZ14SbIIKS9EoLwBA&amp;s=10" class="card-img-top" alt="Bolo recheado decorado">
                             <div class="card-body">
                                 <h2 class="card-title h5">Bolos Intermediários</h2>
                                 <p class="card-text">Temos também opções mais recheadas para você escolher e aproveitar.</p>
+                                <h3>R$35.00</h3>
+                                <button type="button" class="btn btn-primary">Comprar</button>
                             </div>
                         </article>
                     </div>
+
                     <div class="col">
-                        <article class="card h-100">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNZMmB5C22F64LNJMtrpK2MpZxNPai8QLezSwK5DehA&amp;s=10" class="card-img-top" alt="Bolo premium decorado">
+                        <article class="card h-70">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNZMmB5C22F64LNJMtrpK2MpZxNPai8QLezSwK5DehA&amp;s=10" class="card-img-top" alt="Bolo premium decorado" width="200px">
                             <div class="card-body">
                                 <h2 class="card-title h5">Bolos Premium</h2>
                                 <p class="card-text">Conheça nossos bolos mais elaborados e completos para ocasiões especiais.</p>
+                                <h3>R$43.00</h3>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+
                             </div>
                         </article>
+
                     </div>
                 </div>
             </section>
@@ -72,7 +86,45 @@
                 <p id="form-status" class="alert alert-success mt-3 d-none" role="status" aria-live="polite"></p>
             </form>
         </section>
+
+        <section id="sobre">
+            <div id="depoimentos" class="carousel slide" role="region" aria-label="Depoimentos de exemplo">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="p-5 bg-dark text-white">
+                            <h2>Ana — depoimento fictício</h2>
+                            <p>Aprendi a organizar meus projetos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="p-5 bg-dark text-white">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNZMmB5C22F64LNJMtrpK2MpZxNPai8QLezSwK5DehA&amp;s=10" alt="">
+                        </div>
+                    </div>
+
+                <!-- PARTE DOS BOTOES -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#depoimentos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Depoimento de Ana"></button>
+                        <button type="button" data-bs-target="#depoimentos"
+                        data-bs-slide-to="1" aria-label="Depoimento de João"></button>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#depoimentos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Depoimento anterior</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#depoimentos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo depoimento</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+       
     </main>
-        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

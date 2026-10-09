@@ -23,12 +23,13 @@
            <h2>Bem-vindo à Loja de Bolos!</h2>
            <p>Aqui temos várias opções de bolos para satisfazer o seu maravilhoso paladar. Confira algumas delas abaixo.</p>
             
+           <!-- PARTE DOS CARDS COM AS IMAGENS DOS BOLOS -->
             <section class="container py-5" aria-label="Tipos de bolos">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
 
                     <div class="col">
                         <article class="card h-100">
-                            <img src="https://www.receiteria.com.br/wp-content/uploads/bolo-de-ovos.jpeg" class="card-img-top" alt="Bolo simples caseiro">
+                            <img src="https://vovopalmirinha.com.br/wp-content/uploads/2016/06/bolo-simples.jpg" class="card-img-top" alt="Bolo simples caseiro">
                             <div class="card-body">
                                 <h2 class="card-title h5">Bolos Simples</h2>
                                 <p class="card-text">Temos bolos simples de vários sabores para você experimentar.</p>
@@ -69,7 +70,9 @@
         </section>
             
         <section id="contatos">
-            <form action="#" method="post" class="container py-5">
+            <h4 class="py-3">Entre em contato com a gente preenchendo o formulario abaixo</h4>
+
+            <form action="#" method="post" class="container py-3">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Seu nome</label>
                     <input type="text" name="nome" id="nome" class="form-control" placeholder="Seu nome" autocomplete="name" required>
@@ -88,43 +91,72 @@
         </section>
 
         <section id="sobre">
-            <div id="depoimentos" class="carousel slide" role="region" aria-label="Depoimentos de exemplo">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="p-5 bg-dark text-white">
-                            <h2>Ana — depoimento fictício</h2>
-                            <p>Aprendi a organizar meus projetos.</p>
+                <div id="carrosselBolos" class="carousel slide carrossel-bolos" aria-label="Destaques de bolos">
+                    <div class="carousel-indicators indicadores-carrossel">
+                        <button type="button" data-bs-target="#carrosselBolos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carrosselBolos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carrosselBolos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carrosselBolos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carrosselBolos" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner slides-carrossel">
+                        <div class="carousel-item slide-bolo active">
+                            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&amp;fit=max&amp;w=1200&amp;q=85" class="d-block w-100 imagem-bolo" alt="Bolo decorado colorido em camadas">
+                            <div class="legenda-carrossel">
+                                <h2>Bolo decorado</h2>
+                                <p>Camadas coloridas para deixar a comemoração especial.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item slide-bolo">
+                            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&amp;fit=max&amp;w=1200&amp;q=85" class="d-block w-100 imagem-bolo" alt="Bolo branco decorado com frutas vermelhas">
+                            <div class="legenda-carrossel">
+                                <h2>Frutas vermelhas</h2>
+                                <p>Uma combinação leve, bonita e cheia de sabor.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item slide-bolo">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=max&amp;w=1200&amp;q=85" class="d-block w-100 imagem-bolo" alt="Bolo de chocolate decorado com cobertura">
+                            <div class="legenda-carrossel">
+                                <h2>Chocolate especial</h2>
+                                <p>Cobertura intensa para quem ama chocolate.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item slide-bolo">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=max&amp;w=1200&amp;q=85" class="d-block w-100 imagem-bolo" alt="Fatia de bolo com morangos frescos">
+                            <div class="legenda-carrossel">
+                                <h2>Bolo com morangos</h2>
+                                <p>Massa macia acompanhada de frutas frescas.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item slide-bolo">
+                            <img src="https://images.unsplash.com/photo-1557925923-cd4648e211a0?auto=format&amp;fit=max&amp;w=1200&amp;q=85" class="d-block w-100 imagem-bolo" alt="Mini bolo de chocolate decorado">
+                            <div class="legenda-carrossel">
+                                <h2>Mini bolo de chocolate</h2>
+                                <p>Um capricho de chocolate para compartilhar.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="p-5 bg-dark text-white">
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNZMmB5C22F64LNJMtrpK2MpZxNPai8QLezSwK5DehA&amp;s=10" alt="">
-                        </div>
-                    </div>
-
-                <!-- PARTE DOS BOTOES -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#depoimentos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Depoimento de Ana"></button>
-                        <button type="button" data-bs-target="#depoimentos"
-                        data-bs-slide-to="1" aria-label="Depoimento de João"></button>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#depoimentos" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Depoimento anterior</span>
+                    <button class="carousel-control-prev botao-slide-anterior" type="button" data-bs-target="#carrosselBolos" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                     </button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#depoimentos" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Próximo depoimento</span>
+                    <button class="carousel-control-next botao-proximo-slide" type="button" data-bs-target="#carrosselBolos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                     </button>
-                </div>
             </div>
         </section>
-
-
        
     </main>
+
+    <footer>
+        <div></div>
+    </footer>
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

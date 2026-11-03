@@ -123,10 +123,60 @@ nav a:hover {
     opacity: 1;
 }
 
-footer{
-    background-color: black;
+.rodape {
+    margin-top: 3rem;
+    padding: 2rem 5%;
+    background-color: #f9e5eb;
+    color: #4a2833;
+    border-top: 2px solid rgba(170, 120, 120, 0.774);
 }
 
+.conteudo-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
 
+.conteudo-rodape h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
 
+.conteudo-rodape p,
+.copyright {
+    margin-bottom: 0;
+}
 
+.nav-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.nav-rodape a {
+    border-color: rgba(170, 120, 120, 0.774);
+}
+
+.copyright {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(170, 120, 120, 0.45);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .conteudo-rodape {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/* testando um negocio */
+@media (max-width: 300px){
+    header{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

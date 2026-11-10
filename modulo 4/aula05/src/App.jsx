@@ -5,6 +5,8 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Button from './components/Button/Button'
 import Card from './components/Card/Card'
+import MusicaCard from './components/Perfil/Musica'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +18,7 @@ function App() {
     <Button>Cancelar</Button>
 
     <Button>Enviar</Button>
-
+    
     </>
   )
 }
